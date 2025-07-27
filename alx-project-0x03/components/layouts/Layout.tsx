@@ -1,13 +1,11 @@
-import { LayoutProps } from "@/interface";
-import Header from "./Header";
-import Footer from "./Footer";
+import Layout from "@/components/layouts/Layout";
 
-export default function Layout({ children }: LayoutProps) {
+const Home = () => {
   return (
-    <>
-      <Header />
-      <main className="flex-grow">{children}</main>
-      <Footer />
-    </>
+    <Layout>
+      <h1> Welcome to Splash App </h1>
+    </Layout>
   );
-}
+};
+
+export default Home;
