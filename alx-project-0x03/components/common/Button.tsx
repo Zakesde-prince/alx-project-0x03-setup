@@ -1,8 +1,4 @@
-interface ButtonProps {
-  action: () => void;
-  buttonLabel: string;
-  buttonBackgroundColor: string;
-}
+import { ButtonProps } from "@/interface";
 
 export default function Button({
   action,
